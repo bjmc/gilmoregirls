@@ -9,7 +9,6 @@
 status](https://github.com/lgiselebock/gilmoregirls/workflows/R-CMD-check/badge.svg)](https://github.com/lgiselebock/gilmoregirls/actions)
 [![R build
 status](https://github.com/lgiselebock/gilmoregirls/workflows/pkgdown/badge.svg)](https://github.com/lgiselebock/gilmoregirls/actions)
-[![](https://img.shields.io/badge/devel%20version-0.0.0.9000-#8cc6ec.svg)](https://github.com/lgiselebock/gilmoregirls)
 <!-- badges: end -->
 
 The goal of gilmoregirls is to provide the complete script transcription
