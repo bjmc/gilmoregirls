@@ -1,7 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# gilmoregirls \<img src=“<https://github.com/lgiselebock/gilmoregirls/blob/master/man/figures/logo.png?raw=true> align=”right” alt=“” width=“120”/\>
+# gilmoregirls
+
+\<img
+src=“<https://github.com/lgiselebock/gilmoregirls/blob/master/man/figures/logo.png?raw=true>
+align=”right” alt=“” width=“120”/\>
 
 <!-- badges: start -->
 <!-- badges: end -->
