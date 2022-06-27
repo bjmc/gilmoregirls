@@ -4,14 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
+
 
 # gilmoregirls <img src="https://github.com/lgiselebock/gilmoregirls/blob/master/man/figures/logo.png?raw=true" align="right" alt="" width="120"/>
 
@@ -34,16 +27,30 @@ devtools::install_github("lgiselebock/gilmoregirls")
 
 The `gilmoregirls` package comes with one dataset, that contains the informations about all the episodes in the show.
 
-```{r example}
+
+```r
 library(gilmoregirls)
 
 dplyr::glimpse(gilmoregirls_info)
+#> Rows: 153
+#> Columns: 10
+#> $ index             <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…
+#> $ season            <int> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+#> $ episode           <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…
+#> $ title             <chr> "Pilot", "The Lorelais' First Day at Chilton", "Kill…
+#> $ directed_by       <chr> "Lesli Linka Glatter", "Arlene Sanford", "Adam Nimoy…
+#> $ written_by        <chr> "Amy Sherman-Palladino", "Amy Sherman-Palladino", "J…
+#> $ air_date          <chr> "October 5, 2000 ", "October 12, 2000 ", "October 19…
+#> $ us_views_millions <dbl> 5.03, 3.40, 2.89, 3.93, 3.88, 3.73, 3.45, 3.80, 3.62…
+#> $ imdb_rating       <dbl> 8.1, 8.0, 7.8, 7.9, 7.8, 8.5, 8.4, 8.1, 8.7, 8.3, 7.…
+#> $ description       <chr> "Rory is accepted into the elite Chilton prep school…
 ```
 
 
 ### Audience (in millions) in the USA
 
-```{r}
+
+```r
 
 
 gilmoregirls_info %>%
@@ -78,13 +85,15 @@ gilmoregirls_info %>%
     plot.margin = ggplot2::unit(c(1, 1, 1, 1), "cm"),
     text = ggplot2::element_text(size = 10)
   )
-
 ```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
 
 ### Top 7 episodes with best IMDB ratings
 
-```{r}
+
+```r
 
 gilmoregirls_info %>%
   dplyr::arrange(desc(imdb_rating)) %>%
@@ -116,8 +125,9 @@ gilmoregirls_info %>%
     plot.margin = ggplot2::unit(c(1, 1, 1, 1), "cm"),
     text = ggplot2::element_text(size = 10)
   )
-
 ```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
 
 ## Code of Conduct
