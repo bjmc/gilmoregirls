@@ -3,9 +3,7 @@
 
 # gilmoregirls
 
-\<img
-src=“<https://github.com/lgiselebock/gilmoregirls/blob/master/man/figures/logo.png?raw=true>
-align=”right” alt=“” width=“120”/\>
+<img src="https://github.com/lgiselebock/gilmoregirls/blob/master/man/figures/logo.png?raw=true" align="right" alt="" width="120"/>
 
 <!-- badges: start -->
 <!-- badges: end -->
