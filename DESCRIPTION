@@ -12,11 +12,12 @@ Description: "So... it's a show? It's a lifestyle. It's a religion."
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
 Depends: 
     R (>= 2.10)
 LazyData: true
 Imports: 
-    magrittr
+    magrittr,
+    tibble
 URL: https://github.com/lgiselebock/gilmoregirls
 BugReports: https://github.com/lgiselebock/gilmoregirls/issues
