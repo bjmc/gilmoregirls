@@ -185,7 +185,7 @@ imdb_descriptions <- imdb_descriptions_season_1 %>%
 
 
 
-gg_info <- wikitable_raw %>%
+gilmoregirls_info <- wikitable_raw %>%
   dplyr::mutate(
     title = stringr::str_remove(title, '"'),
     title = stringr::str_remove(title, '".*'),
@@ -203,4 +203,4 @@ gg_info <- wikitable_raw %>%
 
 
 
-usethis::use_data(gg_info, overwrite = TRUE)
+usethis::use_data(gilmoregirls_info, overwrite = TRUE)
