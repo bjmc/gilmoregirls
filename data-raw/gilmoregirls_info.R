@@ -190,8 +190,8 @@ gilmoregirls_info <- wikitable_raw %>%
     title = stringr::str_remove(title, '"'),
     title = stringr::str_remove(title, '".*'),
     air_date = stringr::str_remove(air_date, "\\(.*"),
-    # PRECISA ARRUMAR AS DATAS!
-    # air_date = as.Date(air_date, format = "%B %e, %Y"),
+    air_date = stringr::str_trim(air_date),
+    air_date = linelist::guess_dates(air_date),
     us_views_millions = stringr::str_remove(us_views_millions, "\\[.*"),
     us_views_millions = as.numeric(us_views_millions)
   ) %>%
